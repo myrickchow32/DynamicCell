@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Fakery
 
 class CommentsController: UIViewController {
     
@@ -41,14 +40,14 @@ class CommentsController: UIViewController {
     
     func buildComments(){
         
-        let faker = Faker(locale: "nb-NO")
-        for i in 0...9 {
-            let randomInt = Int(arc4random_uniform(6) + 1)
-            var info = Comment(owner: faker.name.name(), id: UUID().uuidString, message: faker.lorem.sentences(amount: 5), ownerPhoto: "9\(i)")
-            
-            comments.append(info)
-            
-        }
+//        let faker = Faker(locale: "nb-NO")
+//        for i in 0...9 {
+//            let randomInt = Int(arc4random_uniform(6) + 1)
+//            var info = Comment(owner: faker.name.name(), id: UUID().uuidString, message: faker.lorem.sentences(amount: 5), ownerPhoto: "9\(i)")
+//            
+//            comments.append(info)
+//            
+//        }
         
     }
 }

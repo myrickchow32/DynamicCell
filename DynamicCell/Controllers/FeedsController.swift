@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Fakery
 
 class FeedsController: UIViewController {
 
@@ -52,12 +51,12 @@ class FeedsController: UIViewController {
     
     func buildHeaders(){
         
-        let faker = Faker(locale: "nb-NO")
+        
         for i in 0...50 {
             let randomInt = Int(arc4random_uniform(13) + 2)
-            let text = faker.lorem.words(amount: randomInt)
+            let text = "DEMO : \(randomInt)"
             headers.append(text)
-        } 
+        }
     }
 }
 
