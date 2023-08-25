@@ -1,30 +1,16 @@
-//
-//  ViewController.swift
-//  DynamicCell
-//
-//  Created by Mohannad on 27.03.2021.
-//
-
 import UIKit
 
 class MainController: UIViewController {
     
-    
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-   
-        
-      
-        // Do any additional setup after loading the view.
     }
     
-   
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        performSegue(withIdentifier: "Feeds", sender: nil)
+    }
     
-
-
-
 }
 
 
